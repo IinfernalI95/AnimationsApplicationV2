@@ -1,0 +1,6 @@
+framework module Pods_TestOMG {
+  umbrella header "Pods-TestOMG-umbrella.h"
+
+  export *
+  module * { export * }
+}
