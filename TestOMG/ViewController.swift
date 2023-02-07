@@ -57,34 +57,6 @@ class ViewController: UIViewController {
         super.loadView()
     }
     
-//    enum Animations2 {
-//
-//        case up
-//        case down
-//        case left
-//        case right
-//        case upFlash(duration: UpFlash)
-//
-//        var duration: String {
-//            switch self {
-//            case .up: return "1.5"
-//            case .down: return "1.5"
-//            case .left: return "1"
-//            case .right: return "1"
-//            case .upFlash(let duration):
-//                switch duration {
-//                case .up: return "1.5"
-//                case.flash: return "5"
-//                }
-//            }
-//        }
-//    }
-//
-//    enum UpFlash {
-//        case up
-//        case flash
-//    }
-    
     // Срабатывает после загрузки View
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,15 +64,6 @@ class ViewController: UIViewController {
         title = "FirstVC"
         printMessage()
         initView()
-//        var upDur = Animations2.up.duration
-//        var rDur = Animations2.right.duration
-//        print()
-//        print("Up.dur - \(upDur)    ----------  Right.dur - \(rDur)")
-//        var allCas = Animations2.allCases
-//        print(allCas[1].rawValue)
-//        var flashDur = Animations2.upFlash(duration: .flash)
-//        print("Flash.dur - \(flashDur)")
-//        print()
     }
     
     private func initView() {
@@ -125,7 +88,6 @@ class ViewController: UIViewController {
         button.duration = 1
         button.animate()
         button.setTitle(massAnimation[animateCount].rawValue, for: .normal)
-        //print(type(of: massAnimation[1].rawValue))
     }
     
     private func animateSpringView(_ count: Int) {
